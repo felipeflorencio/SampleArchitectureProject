@@ -6,9 +6,9 @@ Feel free to add at any point any particular technique or algorithm that you thi
 ​
 You're allowed and encouraged to use third party libraries, as long as you put them together yourself without relying on a framework to do it for you. An effective developer knows what to build and what to reuse, but also how his tools work. Be prepared to answer some questions about those packages.
 ​
-There's no hard time limit, but we expect you to be able to solve this test in a few hours.
+There's no hard time limit, but it shouldn't take you more than a day.
 ​
-When you're finished, reply within the existing mail conversation that you have with jobs@hellofresh.de by attaching a zip file with your results.
+When you are done create a pull request from your branch to the master branch and reply to the thread you're having with our HR department telling them we can start reviewing your code.
 ​
 ​
 ## Requirements
