@@ -17,7 +17,7 @@ When you are done create a pull request from your branch to the master branch an
 ​
 * You MUST document your code.
 ​
-* You CANNOT use app development frameworks (like cordova or others). You should also think twice before adding any third party libs that might save you time. If it makes sense go ahead but you need to justify it's usage.
+* You CANNOT use app development frameworks (like cordova or others). You should also think twice before adding any third party libs that might save you time. If it makes sense use them but you need to justify your choice.
 ​
 * You SHOULD write tests.
 ​
