@@ -13,13 +13,11 @@ When you are done create a pull request from your branch to the master branch an
 ​
 ## Requirements
 ​
-* You MUST use Swift 2.
-​
-* You MUST name all labels, variable names, etc., in english.
+* You MUST use Swift 3.
 ​
 * You MUST document your code.
 ​
-* You CANNOT use app development frameworks (like cordova or others). But again, feel free to use any third party libs that might save you time.
+* You CANNOT use app development frameworks (like cordova or others). You should also think twice before adding any third party libs that might save you time. If it makes sense go ahead but you need to justify it's usage.
 ​
 * You SHOULD write tests.
 ​
