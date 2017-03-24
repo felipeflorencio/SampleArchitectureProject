@@ -8,21 +8,12 @@
 
 import Foundation
 
-struct HFNetworkRequest {
+struct HFNetworkRequest: HFNetworkRequestConfigProtocol {
     
-    // Its just add more type here ex PUT DELETE
-    
-    enum RequestType: String {
-        case GET    = "GET"
-        case POST   = "POST"
-    }
-    
-    //MARK: - Public Properties
-    let method: HFNetworkRequest.RequestType
-    let url: String
-    let bodyParameters: [String:AnyObject]?
-    let headerParameter: [String:String]?
-    
+    var method: RequestType
+    var url: String
+    var bodyParameters: [String:AnyObject]?
+    var headerParameter: [String:String]?
     
     func networkRequest() throws -> URLRequest {
         guard let url = URL(string: self.url) else { throw NetworkRequestError.invalidURL(self.url)}

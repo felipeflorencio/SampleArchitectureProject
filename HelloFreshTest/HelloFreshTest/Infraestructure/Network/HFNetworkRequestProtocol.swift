@@ -11,5 +11,5 @@ import Foundation
 typealias ResquestResponse = (_ data: Data?, _ error: NetworkErrorResponse?) -> Void
 
 protocol HFNetworkProtocolAPI {
-    func request(_ request: HFNetworkRequest, responseStatus: @escaping ResquestResponse)
+    func request(_ request: HFNetworkRequestConfigProtocol, responseStatus: @escaping ResquestResponse)
 }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A55AFDDB1E850BCE00CE8F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AFDDA1E850BCE00CE8F12 /* AppDelegate.swift */; };
-		A55AFDDD1E850BCE00CE8F12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AFDDC1E850BCE00CE8F12 /* ViewController.swift */; };
 		A55AFDE51E850BCE00CE8F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55AFDE31E850BCE00CE8F12 /* LaunchScreen.storyboard */; };
 		A55AFDF01E850BCE00CE8F12 /* HelloFreshTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AFDEF1E850BCE00CE8F12 /* HelloFreshTestTests.swift */; };
 		A592EBDB1E85173600948DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A592EBD21E85173600948DAB /* Assets.xcassets */; };
@@ -18,6 +17,13 @@
 		A592EBE21E851A3500948DAB /* HFNetworkRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A592EBE11E851A3500948DAB /* HFNetworkRequestProtocol.swift */; };
 		A592EBE41E851ACA00948DAB /* NSData+HelperExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A592EBE31E851ACA00948DAB /* NSData+HelperExtension.swift */; };
 		A592EBE71E851FD400948DAB /* HFDataFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A592EBE61E851FD400948DAB /* HFDataFileReader.swift */; };
+		A5A99D911E85CB99006429B9 /* HFNetworkRequestConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A99D901E85CB99006429B9 /* HFNetworkRequestConfigProtocol.swift */; };
+		A5A99D941E85D35A006429B9 /* HFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A99D931E85D35A006429B9 /* HFHomeViewController.swift */; };
+		A5A99D971E85D437006429B9 /* HFHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A99D961E85D437006429B9 /* HFHomeView.swift */; };
+		A5A99D9D1E85DACD006429B9 /* HFHomeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A99D9C1E85DACD006429B9 /* HFHomeProvider.swift */; };
+		A5A99D9F1E85DAD9006429B9 /* HFHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A99D9E1E85DAD9006429B9 /* HFHomeModel.swift */; };
+		A5A99DA11E85DAE3006429B9 /* HFHomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A99DA01E85DAE3006429B9 /* HFHomeManager.swift */; };
+		A5A99DA31E85DAEA006429B9 /* HFHomeBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A99DA21E85DAEA006429B9 /* HFHomeBusiness.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +39,6 @@
 /* Begin PBXFileReference section */
 		A55AFDD71E850BCE00CE8F12 /* HelloFreshTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloFreshTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55AFDDA1E850BCE00CE8F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A55AFDDC1E850BCE00CE8F12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A55AFDE41E850BCE00CE8F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A55AFDE61E850BCE00CE8F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A55AFDEB1E850BCE00CE8F12 /* HelloFreshTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloFreshTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +51,13 @@
 		A592EBE11E851A3500948DAB /* HFNetworkRequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFNetworkRequestProtocol.swift; sourceTree = "<group>"; };
 		A592EBE31E851ACA00948DAB /* NSData+HelperExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+HelperExtension.swift"; sourceTree = "<group>"; };
 		A592EBE61E851FD400948DAB /* HFDataFileReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFDataFileReader.swift; sourceTree = "<group>"; };
+		A5A99D901E85CB99006429B9 /* HFNetworkRequestConfigProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFNetworkRequestConfigProtocol.swift; sourceTree = "<group>"; };
+		A5A99D931E85D35A006429B9 /* HFHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeViewController.swift; sourceTree = "<group>"; };
+		A5A99D961E85D437006429B9 /* HFHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeView.swift; sourceTree = "<group>"; };
+		A5A99D9C1E85DACD006429B9 /* HFHomeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeProvider.swift; sourceTree = "<group>"; };
+		A5A99D9E1E85DAD9006429B9 /* HFHomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeModel.swift; sourceTree = "<group>"; };
+		A5A99DA01E85DAE3006429B9 /* HFHomeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeManager.swift; sourceTree = "<group>"; };
+		A5A99DA21E85DAEA006429B9 /* HFHomeBusiness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeBusiness.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,15 +99,14 @@
 		A55AFDD91E850BCE00CE8F12 /* HelloFreshTest */ = {
 			isa = PBXGroup;
 			children = (
-				A592EBCB1E85173600948DAB /* Business */,
 				A592EBCC1E85173600948DAB /* Infraestructure */,
+				A592EBCB1E85173600948DAB /* Business */,
 				A592EBD61E85173600948DAB /* Manager */,
 				A592EBD71E85173600948DAB /* Model */,
 				A592EBD81E85173600948DAB /* Provider */,
 				A592EBD91E85173600948DAB /* View */,
 				A592EBDA1E85173600948DAB /* ViewController */,
 				A55AFDDA1E850BCE00CE8F12 /* AppDelegate.swift */,
-				A55AFDDC1E850BCE00CE8F12 /* ViewController.swift */,
 				A55AFDE31E850BCE00CE8F12 /* LaunchScreen.storyboard */,
 				A55AFDE61E850BCE00CE8F12 /* Info.plist */,
 			);
@@ -114,6 +125,7 @@
 		A592EBCB1E85173600948DAB /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				A5A99D981E85DA67006429B9 /* HomeBusiness */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -151,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				A592EBDD1E85185000948DAB /* HFNetworkRequest.swift */,
+				A5A99D901E85CB99006429B9 /* HFNetworkRequestConfigProtocol.swift */,
 				A592EBE11E851A3500948DAB /* HFNetworkRequestProtocol.swift */,
 			);
 			path = Network;
@@ -191,6 +204,7 @@
 		A592EBD61E85173600948DAB /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				A5A99D991E85DA6C006429B9 /* HomeManager */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -198,6 +212,7 @@
 		A592EBD71E85173600948DAB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A5A99D9A1E85DA72006429B9 /* HomeModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +220,7 @@
 		A592EBD81E85173600948DAB /* Provider */ = {
 			isa = PBXGroup;
 			children = (
+				A5A99D9B1E85DA77006429B9 /* HomeProvider */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -212,6 +228,7 @@
 		A592EBD91E85173600948DAB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A5A99D951E85D36D006429B9 /* HomeView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +236,7 @@
 		A592EBDA1E85173600948DAB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A5A99D921E85D35A006429B9 /* HomeViewController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -229,6 +247,54 @@
 				A592EBE61E851FD400948DAB /* HFDataFileReader.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		A5A99D921E85D35A006429B9 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A5A99D931E85D35A006429B9 /* HFHomeViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		A5A99D951E85D36D006429B9 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				A5A99D961E85D437006429B9 /* HFHomeView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		A5A99D981E85DA67006429B9 /* HomeBusiness */ = {
+			isa = PBXGroup;
+			children = (
+				A5A99DA21E85DAEA006429B9 /* HFHomeBusiness.swift */,
+			);
+			path = HomeBusiness;
+			sourceTree = "<group>";
+		};
+		A5A99D991E85DA6C006429B9 /* HomeManager */ = {
+			isa = PBXGroup;
+			children = (
+				A5A99DA01E85DAE3006429B9 /* HFHomeManager.swift */,
+			);
+			path = HomeManager;
+			sourceTree = "<group>";
+		};
+		A5A99D9A1E85DA72006429B9 /* HomeModel */ = {
+			isa = PBXGroup;
+			children = (
+				A5A99D9E1E85DAD9006429B9 /* HFHomeModel.swift */,
+			);
+			path = HomeModel;
+			sourceTree = "<group>";
+		};
+		A5A99D9B1E85DA77006429B9 /* HomeProvider */ = {
+			isa = PBXGroup;
+			children = (
+				A5A99D9C1E85DACD006429B9 /* HFHomeProvider.swift */,
+			);
+			path = HomeProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,11 +402,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A55AFDDD1E850BCE00CE8F12 /* ViewController.swift in Sources */,
+				A5A99DA11E85DAE3006429B9 /* HFHomeManager.swift in Sources */,
+				A5A99D9F1E85DAD9006429B9 /* HFHomeModel.swift in Sources */,
+				A5A99D911E85CB99006429B9 /* HFNetworkRequestConfigProtocol.swift in Sources */,
 				A592EBE01E8518A000948DAB /* HFNetworkRequestError.swift in Sources */,
 				A592EBE71E851FD400948DAB /* HFDataFileReader.swift in Sources */,
+				A5A99D941E85D35A006429B9 /* HFHomeViewController.swift in Sources */,
 				A592EBE41E851ACA00948DAB /* NSData+HelperExtension.swift in Sources */,
+				A5A99D9D1E85DACD006429B9 /* HFHomeProvider.swift in Sources */,
+				A5A99DA31E85DAEA006429B9 /* HFHomeBusiness.swift in Sources */,
 				A592EBE21E851A3500948DAB /* HFNetworkRequestProtocol.swift in Sources */,
+				A5A99D971E85D437006429B9 /* HFHomeView.swift in Sources */,
 				A592EBDE1E85185000948DAB /* HFNetworkRequest.swift in Sources */,
 				A55AFDDB1E850BCE00CE8F12 /* AppDelegate.swift in Sources */,
 			);

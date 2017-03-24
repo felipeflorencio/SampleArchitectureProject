@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HFViewController.swift
 //  HelloFreshTest
 //
 //  Created by Felipe Florencio Garcia on 3/24/17.
@@ -8,18 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HFViewController: UIViewController {
+
+    //    Use this to refer to UIView
+    internal var mainView: HFHomeView {
+        return self.view as! HFHomeView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
