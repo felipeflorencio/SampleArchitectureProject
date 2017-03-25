@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum NetworkRequestError: Error, CustomStringConvertible {
+enum HFNetworkRequestError: Error, CustomStringConvertible {
     case invalidURL(String)
     case invalidParameters([String:AnyObject])
     

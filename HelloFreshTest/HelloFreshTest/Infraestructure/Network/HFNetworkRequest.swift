@@ -16,7 +16,7 @@ struct HFNetworkRequest: HFNetworkRequestConfigProtocol {
     var headerParameter: [String:String]?
     
     func networkRequest() throws -> URLRequest {
-        guard let url = URL(string: self.url) else { throw NetworkRequestError.invalidURL(self.url)}
+        guard let url = URL(string: self.url) else { throw HFNetworkRequestError.invalidURL(self.url)}
         
         var request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 120)
         request.httpMethod = self.method.rawValue
@@ -27,7 +27,7 @@ struct HFNetworkRequest: HFNetworkRequestConfigProtocol {
                 request.addValue("application/json", forHTTPHeaderField: "Content-Type")
                 request.httpBody = postData
             } catch {
-                throw NetworkRequestError.invalidParameters(parameters)
+                throw HFNetworkRequestError.invalidParameters(parameters)
             }
         }
         

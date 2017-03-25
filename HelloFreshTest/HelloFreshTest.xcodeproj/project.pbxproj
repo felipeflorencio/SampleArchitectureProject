@@ -24,6 +24,9 @@
 		A5A99D9F1E85DAD9006429B9 /* HFHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A99D9E1E85DAD9006429B9 /* HFHomeModel.swift */; };
 		A5A99DA11E85DAE3006429B9 /* HFHomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A99DA01E85DAE3006429B9 /* HFHomeManager.swift */; };
 		A5A99DA31E85DAEA006429B9 /* HFHomeBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A99DA21E85DAEA006429B9 /* HFHomeBusiness.swift */; };
+		A5A99DA51E85DCD3006429B9 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A99DA41E85DCD3006429B9 /* recipes.json */; };
+		A5A99DA71E85E343006429B9 /* HFHomeUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A99DA61E85E343006429B9 /* HFHomeUserModel.swift */; };
+		A5A99DA91E860CD5006429B9 /* HSParseDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A99DA81E860CD5006429B9 /* HSParseDataError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		A5A99D9E1E85DAD9006429B9 /* HFHomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeModel.swift; sourceTree = "<group>"; };
 		A5A99DA01E85DAE3006429B9 /* HFHomeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeManager.swift; sourceTree = "<group>"; };
 		A5A99DA21E85DAEA006429B9 /* HFHomeBusiness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeBusiness.swift; sourceTree = "<group>"; };
+		A5A99DA41E85DCD3006429B9 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
+		A5A99DA61E85E343006429B9 /* HFHomeUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeUserModel.swift; sourceTree = "<group>"; };
+		A5A99DA81E860CD5006429B9 /* HSParseDataError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSParseDataError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				A592EBDF1E8518A000948DAB /* HFNetworkRequestError.swift */,
+				A5A99DA81E860CD5006429B9 /* HSParseDataError.swift */,
 			);
 			path = ErrorHandle;
 			sourceTree = "<group>";
@@ -172,6 +179,7 @@
 		A592EBD01E85173600948DAB /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				A5A99DA41E85DCD3006429B9 /* recipes.json */,
 				A592EBD11E85173600948DAB /* Images */,
 				A592EBD31E85173600948DAB /* Storyboard */,
 			);
@@ -285,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				A5A99D9E1E85DAD9006429B9 /* HFHomeModel.swift */,
+				A5A99DA61E85E343006429B9 /* HFHomeUserModel.swift */,
 			);
 			path = HomeModel;
 			sourceTree = "<group>";
@@ -385,6 +394,7 @@
 				A55AFDE51E850BCE00CE8F12 /* LaunchScreen.storyboard in Resources */,
 				A592EBDC1E85173600948DAB /* Main.storyboard in Resources */,
 				A592EBDB1E85173600948DAB /* Assets.xcassets in Resources */,
+				A5A99DA51E85DCD3006429B9 /* recipes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +413,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5A99DA11E85DAE3006429B9 /* HFHomeManager.swift in Sources */,
+				A5A99DA71E85E343006429B9 /* HFHomeUserModel.swift in Sources */,
+				A5A99DA91E860CD5006429B9 /* HSParseDataError.swift in Sources */,
 				A5A99D9F1E85DAD9006429B9 /* HFHomeModel.swift in Sources */,
 				A5A99D911E85CB99006429B9 /* HFNetworkRequestConfigProtocol.swift in Sources */,
 				A592EBE01E8518A000948DAB /* HFNetworkRequestError.swift in Sources */,
