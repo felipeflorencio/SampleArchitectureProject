@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43F67A96793EE6D54FCB59EC /* Pods_HelloFreshTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD29E7AA840A0901B63ACE9 /* Pods_HelloFreshTestTests.framework */; };
+		64B5B75ED5EF1FC31B646479 /* Pods_HelloFreshTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05036BBABF5A6C0570ED9F1B /* Pods_HelloFreshTest.framework */; };
 		A52A82381E8713E00051C29C /* HFNSObjectUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82371E8713E00051C29C /* HFNSObjectUtil.swift */; };
 		A52A823B1E8733780051C29C /* HFHomeBusinessProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A823A1E8733770051C29C /* HFHomeBusinessProtocol.swift */; };
 		A52A823E1E874A950051C29C /* HFHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A823D1E874A950051C29C /* HFHomeTableViewCell.swift */; };
@@ -43,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05036BBABF5A6C0570ED9F1B /* Pods_HelloFreshTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloFreshTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		229423654E6BC556D74C9DE5 /* Pods-HelloFreshTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFreshTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloFreshTestTests/Pods-HelloFreshTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DF6B1ED20A54CA49B527FE1 /* Pods-HelloFreshTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFreshTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloFreshTest/Pods-HelloFreshTest.debug.xcconfig"; sourceTree = "<group>"; };
+		995DF31AC43705D3AE525930 /* Pods-HelloFreshTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFreshTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloFreshTestTests/Pods-HelloFreshTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		9DD29E7AA840A0901B63ACE9 /* Pods_HelloFreshTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloFreshTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52A82371E8713E00051C29C /* HFNSObjectUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFNSObjectUtil.swift; sourceTree = "<group>"; };
 		A52A823A1E8733770051C29C /* HFHomeBusinessProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeBusinessProtocol.swift; sourceTree = "<group>"; };
 		A52A823D1E874A950051C29C /* HFHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeTableViewCell.swift; sourceTree = "<group>"; };
@@ -70,6 +77,7 @@
 		A5A99DA41E85DCD3006429B9 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
 		A5A99DA61E85E343006429B9 /* HFHomeUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeUserModel.swift; sourceTree = "<group>"; };
 		A5A99DA81E860CD5006429B9 /* HSParseDataError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSParseDataError.swift; sourceTree = "<group>"; };
+		EDB8D0774DB7EB2704F123C6 /* Pods-HelloFreshTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFreshTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloFreshTest/Pods-HelloFreshTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64B5B75ED5EF1FC31B646479 /* Pods_HelloFreshTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +93,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43F67A96793EE6D54FCB59EC /* Pods_HelloFreshTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58E284786267E9F4154EE184 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05036BBABF5A6C0570ED9F1B /* Pods_HelloFreshTest.framework */,
+				9DD29E7AA840A0901B63ACE9 /* Pods_HelloFreshTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68D31987ACDAE8DBE5D78A4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DF6B1ED20A54CA49B527FE1 /* Pods-HelloFreshTest.debug.xcconfig */,
+				EDB8D0774DB7EB2704F123C6 /* Pods-HelloFreshTest.release.xcconfig */,
+				229423654E6BC556D74C9DE5 /* Pods-HelloFreshTestTests.debug.xcconfig */,
+				995DF31AC43705D3AE525930 /* Pods-HelloFreshTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A52A82391E8733670051C29C /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +142,8 @@
 				A55AFDD91E850BCE00CE8F12 /* HelloFreshTest */,
 				A55AFDEE1E850BCE00CE8F12 /* HelloFreshTestTests */,
 				A55AFDD81E850BCE00CE8F12 /* Products */,
+				68D31987ACDAE8DBE5D78A4A /* Pods */,
+				58E284786267E9F4154EE184 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -338,9 +370,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A55AFDF41E850BCE00CE8F12 /* Build configuration list for PBXNativeTarget "HelloFreshTest" */;
 			buildPhases = (
+				48C51F61160CF81E4CE79E82 /* [CP] Check Pods Manifest.lock */,
 				A55AFDD31E850BCD00CE8F12 /* Sources */,
 				A55AFDD41E850BCD00CE8F12 /* Frameworks */,
 				A55AFDD51E850BCD00CE8F12 /* Resources */,
+				01B87D1A3BFE7294EFB3EBA3 /* [CP] Embed Pods Frameworks */,
+				24EF331D32E2C1834F95D357 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -355,9 +390,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A55AFDF71E850BCE00CE8F12 /* Build configuration list for PBXNativeTarget "HelloFreshTestTests" */;
 			buildPhases = (
+				FAC4CCC7B0A0380B1CAE0845 /* [CP] Check Pods Manifest.lock */,
 				A55AFDE71E850BCE00CE8F12 /* Sources */,
 				A55AFDE81E850BCE00CE8F12 /* Frameworks */,
 				A55AFDE91E850BCE00CE8F12 /* Resources */,
+				08D7024B9C8B96C9E6B97F19 /* [CP] Embed Pods Frameworks */,
+				C007C510A324B53BA545421C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -431,6 +469,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01B87D1A3BFE7294EFB3EBA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloFreshTest/Pods-HelloFreshTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		08D7024B9C8B96C9E6B97F19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloFreshTestTests/Pods-HelloFreshTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24EF331D32E2C1834F95D357 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloFreshTest/Pods-HelloFreshTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48C51F61160CF81E4CE79E82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C007C510A324B53BA545421C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloFreshTestTests/Pods-HelloFreshTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAC4CCC7B0A0380B1CAE0845 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A55AFDD31E850BCD00CE8F12 /* Sources */ = {
@@ -583,6 +714,7 @@
 		};
 		A55AFDF51E850BCE00CE8F12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DF6B1ED20A54CA49B527FE1 /* Pods-HelloFreshTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -597,6 +729,7 @@
 		};
 		A55AFDF61E850BCE00CE8F12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDB8D0774DB7EB2704F123C6 /* Pods-HelloFreshTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -611,6 +744,7 @@
 		};
 		A55AFDF81E850BCE00CE8F12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 229423654E6BC556D74C9DE5 /* Pods-HelloFreshTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -626,6 +760,7 @@
 		};
 		A55AFDF91E850BCE00CE8F12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 995DF31AC43705D3AE525930 /* Pods-HelloFreshTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
