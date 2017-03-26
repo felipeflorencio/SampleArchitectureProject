@@ -37,6 +37,10 @@ struct HFHomeModel {
     let user: HFHomeUserModel
     let weeks: Array<String>
     
+    // As i don't know exactly how this logic works, i will do just for user 
+    // click and test and don't lose reference when moving table view
+    var userFavorited: Bool
+    
 }
 
 extension HFHomeModel {
@@ -177,7 +181,7 @@ extension HFHomeModel {
             }
 
 
-            let homeModel = HFHomeModel(calories: calories, carbos: carbos, card: card, country: country, deliverable_ingredients: deliverable_ingredients, descriptionData: descriptionData, difficulty: difficulty, fats: fats, favorites: favorites, fibers: fibers, headline: headline, highlighted: highlighted, idData: idData, image: image, ingredients: ingredients, keywords: keywords, name: name, products: products, proteins: proteins, rating: rating!, ratings: ratings!, thumb: thumb, time: time, undeliverable_ingredients: undeliverable_ingredients, user: user, weeks: weeks)
+            let homeModel = HFHomeModel(calories: calories, carbos: carbos, card: card, country: country, deliverable_ingredients: deliverable_ingredients, descriptionData: descriptionData, difficulty: difficulty, fats: fats, favorites: favorites, fibers: fibers, headline: headline, highlighted: highlighted, idData: idData, image: image, ingredients: ingredients, keywords: keywords, name: name, products: products, proteins: proteins, rating: rating!, ratings: ratings!, thumb: thumb, time: time, undeliverable_ingredients: undeliverable_ingredients, user: user, weeks: weeks, userFavorited: false)
             
             listOfParsedData.append(homeModel)
         }

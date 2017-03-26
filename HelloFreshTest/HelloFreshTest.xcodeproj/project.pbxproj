@@ -18,6 +18,8 @@
 		A52A82491E875BFF0051C29C /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82441E875BFF0051C29C /* HudView.swift */; };
 		A52A824A1E875BFF0051C29C /* LoadingMessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82451E875BFF0051C29C /* LoadingMessagesHandler.swift */; };
 		A52A824D1E875C6E0051C29C /* HFHUDLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A824C1E875C6E0051C29C /* HFHUDLoading.swift */; };
+		A52A824F1E8822600051C29C /* UIView+VisualUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A824E1E8822600051C29C /* UIView+VisualUtil.swift */; };
+		A52A82541E8827C10051C29C /* HFHomeTableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82531E8827C10051C29C /* HFHomeTableViewCellProtocol.swift */; };
 		A55AFDDB1E850BCE00CE8F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AFDDA1E850BCE00CE8F12 /* AppDelegate.swift */; };
 		A55AFDE51E850BCE00CE8F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55AFDE31E850BCE00CE8F12 /* LaunchScreen.storyboard */; };
 		A55AFDF01E850BCE00CE8F12 /* HelloFreshTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AFDEF1E850BCE00CE8F12 /* HelloFreshTestTests.swift */; };
@@ -66,6 +68,8 @@
 		A52A82441E875BFF0051C29C /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
 		A52A82451E875BFF0051C29C /* LoadingMessagesHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingMessagesHandler.swift; sourceTree = "<group>"; };
 		A52A824C1E875C6E0051C29C /* HFHUDLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHUDLoading.swift; sourceTree = "<group>"; };
+		A52A824E1E8822600051C29C /* UIView+VisualUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+VisualUtil.swift"; sourceTree = "<group>"; };
+		A52A82531E8827C10051C29C /* HFHomeTableViewCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeTableViewCellProtocol.swift; sourceTree = "<group>"; };
 		A55AFDD71E850BCE00CE8F12 /* HelloFreshTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloFreshTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55AFDDA1E850BCE00CE8F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A55AFDE41E850BCE00CE8F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 		A52A823C1E874A890051C29C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				A52A82521E8827C10051C29C /* Protocol */,
 				A52A823D1E874A950051C29C /* HFHomeTableViewCell.swift */,
 			);
 			path = Cell;
@@ -168,6 +173,14 @@
 				A52A824C1E875C6E0051C29C /* HFHUDLoading.swift */,
 			);
 			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		A52A82521E8827C10051C29C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				A52A82531E8827C10051C29C /* HFHomeTableViewCellProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		A55AFDCE1E850BCD00CE8F12 = {
@@ -251,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				A592EBE31E851ACA00948DAB /* NSData+HelperExtension.swift */,
+				A52A824E1E8822600051C29C /* UIView+VisualUtil.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -605,9 +619,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5A99DA11E85DAE3006429B9 /* HFHomeManager.swift in Sources */,
+				A52A82541E8827C10051C29C /* HFHomeTableViewCellProtocol.swift in Sources */,
 				A52A82461E875BFF0051C29C /* APESuperHUD.swift in Sources */,
 				A52A824D1E875C6E0051C29C /* HFHUDLoading.swift in Sources */,
 				A52A823B1E8733780051C29C /* HFHomeBusinessProtocol.swift in Sources */,
+				A52A824F1E8822600051C29C /* UIView+VisualUtil.swift in Sources */,
 				A5A99DA71E85E343006429B9 /* HFHomeUserModel.swift in Sources */,
 				A5A99DA91E860CD5006429B9 /* HSParseDataError.swift in Sources */,
 				A52A82381E8713E00051C29C /* HFNSObjectUtil.swift in Sources */,

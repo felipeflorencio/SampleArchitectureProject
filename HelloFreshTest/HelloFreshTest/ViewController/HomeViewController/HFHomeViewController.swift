@@ -73,13 +73,22 @@ extension HFViewController: UITableViewDelegate, UITableViewDataSource {
         // This is for security reason, when we have like infinite list 
         // sometimes can happen out of inbox, this is just precaution
         if self.listOfFoodRecipes.indices.contains(indexPath.row) {
-            foodCell.fillFoodCellWithData(data: self.listOfFoodRecipes[indexPath.row])
+            foodCell.homeViewCellDelegate = self
+            foodCell.fillFoodCellWithData(data: self.listOfFoodRecipes[indexPath.row], index: indexPath.row)
         }
         
         return foodCell
     }
     
-        
-    
+}
+
+extension HFViewController: HFHomeTableViewCellProtocol {
+    func selectedFavoriteFood(item positionItem: Int, status favoritedStatus: Bool) {
+        if self.listOfFoodRecipes.indices.contains(positionItem) {
+            var temporaryObjectReference = self.listOfFoodRecipes[positionItem]
+            temporaryObjectReference.userFavorited = favoritedStatus
+            self.listOfFoodRecipes[positionItem] = temporaryObjectReference
+        }
+    }
 }
 
