@@ -21,15 +21,15 @@ extension HFHomeUserModel {
     static func parseToHFHomeUserModel(data objectJson: Dictionary<String, String>) throws -> HFHomeUserModel {
         
         guard let email = objectJson["email"] else {
-            throw HSParseDataError.invalidVariableMapping("email")
+            throw NetworkErrorResponse.HSParseDataError.invalidVariableMapping("email")
         }
         
         guard let latlng = objectJson["latlng"] else {
-            throw HSParseDataError.invalidVariableMapping("latlng")
+            throw NetworkErrorResponse.HSParseDataError.invalidVariableMapping("latlng")
         }
         
         guard let name = objectJson["name"] else {
-            throw HSParseDataError.invalidVariableMapping("name")
+            throw NetworkErrorResponse.HSParseDataError.invalidVariableMapping("name")
         }
         
         return HFHomeUserModel(email: email, latlng: latlng, name: name)

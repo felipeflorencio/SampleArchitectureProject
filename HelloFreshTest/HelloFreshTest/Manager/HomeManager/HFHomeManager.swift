@@ -8,6 +8,12 @@
 
 import Foundation
 
-class HFHomeManager: NSObject {
+class HFHomeManager: NSObject, HFHomeBusinessProtocol {
+    
+    private let homeBusiness = HFHomeBusiness()
+    
+    func requestHomeData(response dataResponse: @escaping DataResponse) {
+        homeBusiness.requestHomeData(response: dataResponse)
+    }
     
 }

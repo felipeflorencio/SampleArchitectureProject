@@ -8,7 +8,16 @@
 
 import Foundation
 
-enum HSParseDataError: Error {
-    case invalidVariableMapping(String)
-    case failedMappingData
+extension NetworkErrorResponse {
+    enum HSParseDataError: Error, ErrorResponseProtocol {
+        case invalidVariableMapping(String)
+        case failedMappingData
+        
+        var description: String{
+            switch self {
+            case .invalidVariableMapping(let variable): return "Invalid Variable Mapping: \(variable)"
+            case .failedMappingData: return "Failed mapping data"
+            }
+        }
+    }
 }

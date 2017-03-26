@@ -10,4 +10,6 @@ import UIKit
 
 class HFHomeView: UIView {
     
+    @IBOutlet weak var tableView: UITableView!
+    
 }

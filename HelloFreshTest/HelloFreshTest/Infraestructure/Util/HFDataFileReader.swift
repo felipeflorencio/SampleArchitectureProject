@@ -10,23 +10,20 @@ import Foundation
 
 class HFDataFileReader: NSObject {
     
-    class func loadJson(filename fileName: String = "recipes") throws -> Dictionary<String, AnyObject> {
+    class func loadJsonData(filename fileName: String = "recipes") throws -> Data {
         if let url = Bundle.main.url(forResource: fileName, withExtension: "json")
         {
             do {
                 let data = try Data(contentsOf: url)
-                let object = try data.fromJSON()
-                if let dictionary = object as? [String: AnyObject] {
-                    return dictionary
-                }
+                return data
             } catch {
                 throw NetworkErrorResponse.ParseResponseFailed.jsonParseFailed
             }
         
-            throw NetworkErrorResponse.ParseResponseFailed.parseErrorMsg("Some localized Error Message")
         }
         
-        throw NetworkErrorResponse.ParseResponseFailed.parseErrorMsg("Some localized Error Message 2")
+        throw NetworkErrorResponse.ParseResponseFailed.parseErrorMsg("Some localized Error Message")
     }
+    
     
 }

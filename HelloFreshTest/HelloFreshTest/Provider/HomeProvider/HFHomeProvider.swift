@@ -9,5 +9,19 @@
 import Foundation
 
 class HFHomeProvider: NSObject {
+ 
+    
+    func request(_ request: HFNetworkRequest, responseStatus: @escaping ResquestResponse) {
+        
+        do {
+            let data = try HFDataFileReader.loadJsonData()
+            delay(3, closure: {
+                responseStatus(data, nil)
+            })
+        } catch {
+            responseStatus(nil, NetworkErrorResponse.unknown(error.localizedDescription))
+        }
+    
+    }
     
 }
