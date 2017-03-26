@@ -20,6 +20,7 @@
 		A52A824D1E875C6E0051C29C /* HFHUDLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A824C1E875C6E0051C29C /* HFHUDLoading.swift */; };
 		A52A824F1E8822600051C29C /* UIView+VisualUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A824E1E8822600051C29C /* UIView+VisualUtil.swift */; };
 		A52A82541E8827C10051C29C /* HFHomeTableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82531E8827C10051C29C /* HFHomeTableViewCellProtocol.swift */; };
+		A52A82561E887A8D0051C29C /* HFRateImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82551E887A8D0051C29C /* HFRateImage.swift */; };
 		A55AFDDB1E850BCE00CE8F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AFDDA1E850BCE00CE8F12 /* AppDelegate.swift */; };
 		A55AFDE51E850BCE00CE8F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55AFDE31E850BCE00CE8F12 /* LaunchScreen.storyboard */; };
 		A55AFDF01E850BCE00CE8F12 /* HelloFreshTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AFDEF1E850BCE00CE8F12 /* HelloFreshTestTests.swift */; };
@@ -70,6 +71,7 @@
 		A52A824C1E875C6E0051C29C /* HFHUDLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHUDLoading.swift; sourceTree = "<group>"; };
 		A52A824E1E8822600051C29C /* UIView+VisualUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+VisualUtil.swift"; sourceTree = "<group>"; };
 		A52A82531E8827C10051C29C /* HFHomeTableViewCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeTableViewCellProtocol.swift; sourceTree = "<group>"; };
+		A52A82551E887A8D0051C29C /* HFRateImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFRateImage.swift; sourceTree = "<group>"; };
 		A55AFDD71E850BCE00CE8F12 /* HelloFreshTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloFreshTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55AFDDA1E850BCE00CE8F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A55AFDE41E850BCE00CE8F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				A52A824C1E875C6E0051C29C /* HFHUDLoading.swift */,
+				A52A82551E887A8D0051C29C /* HFRateImage.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -644,6 +647,7 @@
 				A52A824A1E875BFF0051C29C /* LoadingMessagesHandler.swift in Sources */,
 				A592EBDE1E85185000948DAB /* HFNetworkRequest.swift in Sources */,
 				A55AFDDB1E850BCE00CE8F12 /* AppDelegate.swift in Sources */,
+				A52A82561E887A8D0051C29C /* HFRateImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,7 @@ class HFHomeTableViewCell: UITableViewCell {
     @IBOutlet weak var foodImage: UIImageView!
     @IBOutlet weak var foodName: UILabel!
     @IBOutlet weak var foodKeyword: UILabel!
-    @IBOutlet weak var foodRate: UIView!
+    @IBOutlet weak var foodRate: UIImageView!
     @IBOutlet weak var favoriteButton: UIButton!
     
     weak var homeViewCellDelegate: HFHomeTableViewCellProtocol?
@@ -68,6 +68,8 @@ class HFHomeTableViewCell: UITableViewCell {
         if !object.userFavorited {
             imageStatus = UIImage(named: "favorite_heart_off")
         }
+        
+        self.foodRate.setRateForFood(rate: object.rating)
         
         self.favoriteButton.setImage(imageStatus, for: .normal)
 

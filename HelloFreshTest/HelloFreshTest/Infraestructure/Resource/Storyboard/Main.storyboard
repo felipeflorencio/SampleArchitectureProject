@@ -33,7 +33,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJ9-Gu-LAa">
-                                                    <rect key="frame" x="8" y="8" width="398" height="323.66666666666669"/>
+                                                    <rect key="frame" x="8" y="8" width="398" height="324"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="akz-mT-4a5">
                                                             <rect key="frame" x="0.0" y="0.0" width="398" height="200"/>
@@ -59,22 +59,24 @@
                                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9F-90-jhC">
-                                                                    <rect key="frame" x="8" y="95" width="382" height="24"/>
-                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                                </view>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rating_star_0" translatesAutoresizingMaskIntoConstraints="NO" id="zpz-hn-tKZ">
+                                                                    <rect key="frame" x="8" y="95" width="100" height="25"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="100" id="05I-gi-tlk"/>
+                                                                        <constraint firstAttribute="height" constant="25" id="O1o-mo-IMY"/>
+                                                                    </constraints>
+                                                                </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstItem="OlJ-Kj-YIi" firstAttribute="top" secondItem="cwp-Kg-yvx" secondAttribute="top" constant="8" id="8yX-8o-krv"/>
-                                                                <constraint firstItem="Y9F-90-jhC" firstAttribute="leading" secondItem="cwp-Kg-yvx" secondAttribute="leading" constant="8" id="9zX-Wt-Ny4"/>
-                                                                <constraint firstItem="Y9F-90-jhC" firstAttribute="top" secondItem="Rc0-gy-Jci" secondAttribute="bottom" constant="8" id="Ayq-4E-8Tg"/>
                                                                 <constraint firstAttribute="trailing" secondItem="OlJ-Kj-YIi" secondAttribute="trailing" constant="8" id="D2Q-iW-UvR"/>
-                                                                <constraint firstAttribute="trailing" secondItem="Y9F-90-jhC" secondAttribute="trailing" constant="8" id="NPf-qu-JeM"/>
+                                                                <constraint firstAttribute="bottom" secondItem="zpz-hn-tKZ" secondAttribute="bottom" constant="4" id="HyT-Kc-C9Z"/>
                                                                 <constraint firstItem="Rc0-gy-Jci" firstAttribute="top" secondItem="OlJ-Kj-YIi" secondAttribute="bottom" constant="8" id="U0f-VT-TN6"/>
                                                                 <constraint firstItem="Rc0-gy-Jci" firstAttribute="leading" secondItem="cwp-Kg-yvx" secondAttribute="leading" constant="8" id="U6c-KI-Vsi"/>
-                                                                <constraint firstAttribute="bottom" secondItem="Y9F-90-jhC" secondAttribute="bottom" constant="5" id="XTB-x4-pvM"/>
                                                                 <constraint firstAttribute="trailing" secondItem="Rc0-gy-Jci" secondAttribute="trailing" constant="8" id="Y9O-rh-Fiq"/>
+                                                                <constraint firstItem="zpz-hn-tKZ" firstAttribute="leading" secondItem="cwp-Kg-yvx" secondAttribute="leading" constant="8" id="fdO-EZ-axX"/>
+                                                                <constraint firstItem="zpz-hn-tKZ" firstAttribute="top" secondItem="Rc0-gy-Jci" secondAttribute="bottom" constant="8" id="o80-BG-x7C"/>
                                                                 <constraint firstItem="OlJ-Kj-YIi" firstAttribute="leading" secondItem="cwp-Kg-yvx" secondAttribute="leading" constant="8" id="yKL-1V-RJs"/>
                                                             </constraints>
                                                         </view>
@@ -116,7 +118,7 @@
                                             <outlet property="foodImage" destination="akz-mT-4a5" id="WoR-xv-NMI"/>
                                             <outlet property="foodKeyword" destination="Rc0-gy-Jci" id="GXU-wq-aZK"/>
                                             <outlet property="foodName" destination="OlJ-Kj-YIi" id="YbJ-Qu-age"/>
-                                            <outlet property="foodRate" destination="Y9F-90-jhC" id="ftY-kw-iSL"/>
+                                            <outlet property="foodRate" destination="zpz-hn-tKZ" id="dZa-Nf-bvD"/>
                                             <outlet property="windowView" destination="nJ9-Gu-LAa" id="RSm-Jy-Ndl"/>
                                         </connections>
                                     </tableViewCell>
@@ -142,5 +144,6 @@
     </scenes>
     <resources>
         <image name="favorite_heart_off" width="170" height="170"/>
+        <image name="rating_star_0" width="218" height="40"/>
     </resources>
 </document>
