@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class HFHomeTableViewCell: UITableViewCell {
     
@@ -18,5 +19,25 @@ class HFHomeTableViewCell: UITableViewCell {
     
     @IBAction func favoriteButton(_ sender: Any) {
     
+    }
+    
+    func fillFoodCellWithData(data object: HFHomeModel) -> Void {
+        
+        // Configure and load/request the image from server
+        self.foodImage.sd_setShowActivityIndicatorView(true)
+        self.foodImage.sd_setIndicatorStyle(.whiteLarge)
+        self.foodImage.sd_setImage(with: URL(string: object.image), placeholderImage: UIImage(named: "food_placeholder"))
+        
+        self.foodName.text = object.name
+        var keyword = ""
+        for (pos, key) in object.keywords.enumerated() {
+            keyword.append(key)
+            if pos < object.keywords.count {
+                keyword.append(" ・ ")
+            }
+        }
+        
+        self.foodKeyword.text = keyword
+        
     }
 }

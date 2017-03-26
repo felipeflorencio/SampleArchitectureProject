@@ -21,20 +21,19 @@ struct HFHomeModel {
     let favorites: Int
     let fibers: String
     let headline: String
-    let highlighted: String
+    let highlighted: Bool
     let idData: String
     let image: String
-    let incompatibilities: String
     let ingredients: Array<String>
     let keywords: Array<String>
     let name: String
     let products: Array<String>
     let proteins: String
-    let rating: String
-    let ratings: String
+    let rating: Double
+    let ratings: Double
     let thumb: String
     let time: String
-    let undeliverable_ingredients: String
+    let undeliverable_ingredients: Array<Any>
     let user: HFHomeUserModel
     let weeks: Array<String>
     
@@ -92,7 +91,7 @@ extension HFHomeModel {
                 throw NetworkErrorResponse.HSParseDataError.invalidVariableMapping("headline")
             }
             
-            guard let highlighted = dataObject["highlighted"] as? String else {
+            guard let highlighted = dataObject["highlighted"] as? Bool else {
                 throw NetworkErrorResponse.HSParseDataError.invalidVariableMapping("highlighted")
             }
             
@@ -104,10 +103,6 @@ extension HFHomeModel {
                 throw NetworkErrorResponse.HSParseDataError.invalidVariableMapping("image")
             }
             
-            guard let incompatibilities = dataObject["incompatibilities"] as? String else {
-                throw NetworkErrorResponse.HSParseDataError.invalidVariableMapping("incompatibilities")
-            }
-
             guard let ingredients = dataObject["ingredients"] as? Array<String> else {
                 throw NetworkErrorResponse.HSParseDataError.invalidVariableMapping("ingredients")
             }
@@ -128,12 +123,34 @@ extension HFHomeModel {
                 throw NetworkErrorResponse.HSParseDataError.invalidVariableMapping("proteins")
             }
 
-            guard let rating = dataObject["rating"] as? String else {
-                throw NetworkErrorResponse.HSParseDataError.invalidVariableMapping("rating")
+            // Here it's a sample of a kind of validation, we can handle how we want
+            // depend of the rule from our API, in this case the value can be null or
+            // nil so we just validate if is null, if yes we set a value, next if not nil
+            // we need validate if is a Double if not so we throw a exception
+            var rating = dataObject["rating"] as? Double
+            if rating == nil {
+                rating = 0
+            } else {
+                guard let ratingData = dataObject["rating"] as? Double else {
+                    throw NetworkErrorResponse.HSParseDataError.invalidVariableMapping("rating")
+                }
+                
+                rating = ratingData
             }
             
-            guard let ratings = dataObject["ratings"] as? String else {
-                throw NetworkErrorResponse.HSParseDataError.invalidVariableMapping("ratings")
+            // Here it's a sample of a kind of validation, we can handle how we want
+            // depend of the rule from our API, in this case the value can be null or
+            // nil so we just validate if is null, if yes we set a value, next if not nil
+            // we need validate if is a Double if not so we throw a exception
+            var ratings = dataObject["ratings"] as? Double
+            if ratings == nil {
+                ratings = 0
+            } else {
+                guard let ratingsData = dataObject["ratings"] as? Double else {
+                    throw NetworkErrorResponse.HSParseDataError.invalidVariableMapping("ratings")
+                }
+                
+                ratings = ratingsData
             }
             
             guard let thumb = dataObject["thumb"] as? String else {
@@ -144,7 +161,8 @@ extension HFHomeModel {
                 throw NetworkErrorResponse.HSParseDataError.invalidVariableMapping("time")
             }
             
-            guard let undeliverable_ingredients = dataObject["undeliverable_ingredients"] as? String else {
+            // As i don't know what kind of data is this array i set as Any
+            guard let undeliverable_ingredients = dataObject["undeliverable_ingredients"] as? Array<Any> else {
                 throw NetworkErrorResponse.HSParseDataError.invalidVariableMapping("undeliverable_ingredients")
             }
             
@@ -159,7 +177,7 @@ extension HFHomeModel {
             }
 
 
-            let homeModel = HFHomeModel(calories: calories, carbos: carbos, card: card, country: country, deliverable_ingredients: deliverable_ingredients, descriptionData: descriptionData, difficulty: difficulty, fats: fats, favorites: favorites, fibers: fibers, headline: headline, highlighted: highlighted, idData: idData, image: image, incompatibilities: incompatibilities, ingredients: ingredients, keywords: keywords, name: name, products: products, proteins: proteins, rating: rating, ratings: ratings, thumb: thumb, time: time, undeliverable_ingredients: undeliverable_ingredients, user: user, weeks: weeks)
+            let homeModel = HFHomeModel(calories: calories, carbos: carbos, card: card, country: country, deliverable_ingredients: deliverable_ingredients, descriptionData: descriptionData, difficulty: difficulty, fats: fats, favorites: favorites, fibers: fibers, headline: headline, highlighted: highlighted, idData: idData, image: image, ingredients: ingredients, keywords: keywords, name: name, products: products, proteins: proteins, rating: rating!, ratings: ratings!, thumb: thumb, time: time, undeliverable_ingredients: undeliverable_ingredients, user: user, weeks: weeks)
             
             listOfParsedData.append(homeModel)
         }

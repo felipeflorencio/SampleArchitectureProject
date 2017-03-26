@@ -21,7 +21,7 @@ class HFHomeBusiness: NSObject, HFHomeBusinessProtocol {
         
         providerData.request(dataCreating) { (data, error) in
             
-            if error != nil {
+            if error == nil {
                 
                 do {
                     let jsonSerializedResponse = try data?.fromJSON() as! Array<Dictionary<String, Any>>

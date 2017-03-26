@@ -2,7 +2,7 @@
     {
         "calories": "516 kcal",
         "carbos": "47 g",
-        "card": "https://api.hellofresh.com/recipe/card/533143aaff604d567f8b4571",
+        "card": "https://d3hvwccx09j84u.cloudfront.net/1188.0,669.0/image/58a46136c6243b4c79120862-b3fb0bee.jpg",
         "country": "GB",
         "deliverable_ingredients": [
             "375g Sweet Potatoes",
@@ -25,7 +25,7 @@
         "headline": "with Sweet Potato Wedges and Minted Snap Peas",
         "highlighted": true,
         "id": "533143aaff604d567f8b4571",
-        "image": "https://api.hellofresh.com/recipe/image/533143aaff604d567f8b4571",
+        "image": "https://d3hvwccx09j84u.cloudfront.net/1188.0,669.0/image/creamy-butternut-squash-445ccfeb.jpg",
         "incompatibilities": null,
         "ingredients": [
             "375g Sweet Potatoes",
@@ -87,7 +87,7 @@
         "headline": "with Spinach and Lemon Couscous",
         "highlighted": true,
         "id": "53314247ff604d44808b4569",
-        "image": "https://api.hellofresh.com/recipe/image/53314247ff604d44808b4569",
+        "image": "https://d3hvwccx09j84u.cloudfront.net/1188.0,669.0/image/pan-fried-halloumi-2c2d5723.jpg",
         "incompatibilities": null,
         "ingredients": [
             "1 Lemon",
@@ -147,7 +147,7 @@
         "headline": "with Tomato Concasse and Crispy Potatoes",
         "highlighted": true,
         "id": "53314276ff604d28828b456b",
-        "image": "https://api.hellofresh.com/recipe/image/53314276ff604d28828b456b",
+        "image": "https://d3hvwccx09j84u.cloudfront.net/1188.0,669.0/image/creamy-butternut-squash-445ccfeb.jpg",
         "incompatibilities": null,
         "ingredients": [
             "2 Fillets Sea Bream",
@@ -203,7 +203,7 @@
         "headline": "with Roasted Rocket Potatoes",
         "highlighted": true,
         "id": "533143bfff604d44808b456a",
-        "image": "https://api.hellofresh.com/recipe/image/533143bfff604d44808b456a",
+        "image": "https://d3hvwccx09j84u.cloudfront.net/1188.0,669.0/image/moroccan-spiced-salmon-93406c25.jpg",
         "incompatibilities": null,
         "ingredients": [
             "2 Chicken Breasts",
@@ -259,7 +259,7 @@
         "headline": "with Homemade Guacamole and Black Bean Salsa",
         "highlighted": true,
         "id": "5331430fff604d557f8b456d",
-        "image": "https://api.hellofresh.com/recipe/image/5331430fff604d557f8b456d",
+        "image": "https://d3hvwccx09j84u.cloudfront.net/1188.0,669.0/image/thai-sweet-potato-bcedee3a.jpg",
         "incompatibilities": null,
         "ingredients": [
             " 3 Soft Wholemeal Wraps",
@@ -316,7 +316,7 @@
         "headline": "with Wild Rice, Feta and Pine Nuts",
         "highlighted": true,
         "id": "53314328ff604d4d808b456b",
-        "image": "https://api.hellofresh.com/recipe/image/53314328ff604d4d808b456b",
+        "image": "https://d3hvwccx09j84u.cloudfront.net/1188.0,669.0/image/leon-goat-s-cheese-chicken-eaea1c95.jpg",
         "incompatibilities": null,
         "ingredients": [
             "2 Cups Butternut Squash",
@@ -370,7 +370,7 @@
         "headline": "with Toasted Pine Nuts and Tenderstem Broccoli",
         "highlighted": true,
         "id": "53314343ff604d28828b456c",
-        "image": "https://api.hellofresh.com/recipe/image/53314343ff604d28828b456c",
+        "image": "https://d3hvwccx09j84u.cloudfront.net/1188.0,669.0/image/58a455a04f78db3dbf747723-4f6b245b.jpg",
         "incompatibilities": null,
         "ingredients": [
             "Fresh Gnocchi",
@@ -425,7 +425,7 @@
         "headline": "with Creamy Parmesan Polenta",
         "highlighted": true,
         "id": "53314398ff604d6c7a8b456a",
-        "image": "https://api.hellofresh.com/recipe/image/53314398ff604d6c7a8b456a",
+        "image": "https://d3hvwccx09j84u.cloudfront.net/1188.0,669.0/image/classic-sausage-burger-2414b99f.jpg",
         "incompatibilities": null,
         "ingredients": [
             "200g Mince Beef",
@@ -486,7 +486,7 @@
         "headline": "and Sweet and Sour Noodles",
         "highlighted": true,
         "id": "5252b20c301bbf46038b477e",
-        "image": "https://api.hellofresh.com/recipe/image/5252b20c301bbf46038b477e",
+        "image": "https://d3hvwccx09j84u.cloudfront.net/1188.0,669.0/image/morrocan-meatball-potato-bake-7c4b16e1.jpg",
         "incompatibilities": null,
         "ingredients": [
             "Chicken Thighs",

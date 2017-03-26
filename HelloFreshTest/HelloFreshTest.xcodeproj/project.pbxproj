@@ -12,6 +12,12 @@
 		A52A82381E8713E00051C29C /* HFNSObjectUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82371E8713E00051C29C /* HFNSObjectUtil.swift */; };
 		A52A823B1E8733780051C29C /* HFHomeBusinessProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A823A1E8733770051C29C /* HFHomeBusinessProtocol.swift */; };
 		A52A823E1E874A950051C29C /* HFHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A823D1E874A950051C29C /* HFHomeTableViewCell.swift */; };
+		A52A82461E875BFF0051C29C /* APESuperHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82411E875BFF0051C29C /* APESuperHUD.swift */; };
+		A52A82471E875BFF0051C29C /* HudAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82421E875BFF0051C29C /* HudAppearance.swift */; };
+		A52A82481E875BFF0051C29C /* HudUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82431E875BFF0051C29C /* HudUtilities.swift */; };
+		A52A82491E875BFF0051C29C /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82441E875BFF0051C29C /* HudView.swift */; };
+		A52A824A1E875BFF0051C29C /* LoadingMessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82451E875BFF0051C29C /* LoadingMessagesHandler.swift */; };
+		A52A824D1E875C6E0051C29C /* HFHUDLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A824C1E875C6E0051C29C /* HFHUDLoading.swift */; };
 		A55AFDDB1E850BCE00CE8F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AFDDA1E850BCE00CE8F12 /* AppDelegate.swift */; };
 		A55AFDE51E850BCE00CE8F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55AFDE31E850BCE00CE8F12 /* LaunchScreen.storyboard */; };
 		A55AFDF01E850BCE00CE8F12 /* HelloFreshTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AFDEF1E850BCE00CE8F12 /* HelloFreshTestTests.swift */; };
@@ -53,6 +59,13 @@
 		A52A82371E8713E00051C29C /* HFNSObjectUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFNSObjectUtil.swift; sourceTree = "<group>"; };
 		A52A823A1E8733770051C29C /* HFHomeBusinessProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeBusinessProtocol.swift; sourceTree = "<group>"; };
 		A52A823D1E874A950051C29C /* HFHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeTableViewCell.swift; sourceTree = "<group>"; };
+		A52A82401E875BFF0051C29C /* APESuperHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APESuperHUD.h; sourceTree = "<group>"; };
+		A52A82411E875BFF0051C29C /* APESuperHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APESuperHUD.swift; sourceTree = "<group>"; };
+		A52A82421E875BFF0051C29C /* HudAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudAppearance.swift; sourceTree = "<group>"; };
+		A52A82431E875BFF0051C29C /* HudUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudUtilities.swift; sourceTree = "<group>"; };
+		A52A82441E875BFF0051C29C /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		A52A82451E875BFF0051C29C /* LoadingMessagesHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingMessagesHandler.swift; sourceTree = "<group>"; };
+		A52A824C1E875C6E0051C29C /* HFHUDLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHUDLoading.swift; sourceTree = "<group>"; };
 		A55AFDD71E850BCE00CE8F12 /* HelloFreshTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloFreshTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55AFDDA1E850BCE00CE8F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A55AFDE41E850BCE00CE8F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -136,6 +149,27 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		A52A823F1E875BFF0051C29C /* HUDLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				A52A82401E875BFF0051C29C /* APESuperHUD.h */,
+				A52A82411E875BFF0051C29C /* APESuperHUD.swift */,
+				A52A82421E875BFF0051C29C /* HudAppearance.swift */,
+				A52A82431E875BFF0051C29C /* HudUtilities.swift */,
+				A52A82441E875BFF0051C29C /* HudView.swift */,
+				A52A82451E875BFF0051C29C /* LoadingMessagesHandler.swift */,
+			);
+			path = HUDLibrary;
+			sourceTree = "<group>";
+		};
+		A52A824B1E875C500051C29C /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				A52A824C1E875C6E0051C29C /* HFHUDLoading.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
 		A55AFDCE1E850BCD00CE8F12 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +227,7 @@
 		A592EBCC1E85173600948DAB /* Infraestructure */ = {
 			isa = PBXGroup;
 			children = (
+				A52A824B1E875C500051C29C /* UIComponents */,
 				A592EBE51E851FA700948DAB /* Util */,
 				A592EBCD1E85173600948DAB /* ErrorHandle */,
 				A592EBCE1E85173600948DAB /* Extension */,
@@ -259,6 +294,7 @@
 		A592EBD51E85173600948DAB /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				A52A823F1E875BFF0051C29C /* HUDLibrary */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -569,21 +605,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5A99DA11E85DAE3006429B9 /* HFHomeManager.swift in Sources */,
+				A52A82461E875BFF0051C29C /* APESuperHUD.swift in Sources */,
+				A52A824D1E875C6E0051C29C /* HFHUDLoading.swift in Sources */,
 				A52A823B1E8733780051C29C /* HFHomeBusinessProtocol.swift in Sources */,
 				A5A99DA71E85E343006429B9 /* HFHomeUserModel.swift in Sources */,
 				A5A99DA91E860CD5006429B9 /* HSParseDataError.swift in Sources */,
 				A52A82381E8713E00051C29C /* HFNSObjectUtil.swift in Sources */,
 				A5A99D9F1E85DAD9006429B9 /* HFHomeModel.swift in Sources */,
+				A52A82471E875BFF0051C29C /* HudAppearance.swift in Sources */,
 				A5A99D911E85CB99006429B9 /* HFNetworkRequestConfigProtocol.swift in Sources */,
 				A592EBE01E8518A000948DAB /* HFNetworkRequestError.swift in Sources */,
 				A592EBE71E851FD400948DAB /* HFDataFileReader.swift in Sources */,
 				A5A99D941E85D35A006429B9 /* HFHomeViewController.swift in Sources */,
+				A52A82481E875BFF0051C29C /* HudUtilities.swift in Sources */,
 				A52A823E1E874A950051C29C /* HFHomeTableViewCell.swift in Sources */,
 				A592EBE41E851ACA00948DAB /* NSData+HelperExtension.swift in Sources */,
 				A5A99D9D1E85DACD006429B9 /* HFHomeProvider.swift in Sources */,
 				A5A99DA31E85DAEA006429B9 /* HFHomeBusiness.swift in Sources */,
 				A592EBE21E851A3500948DAB /* HFNetworkRequestProtocol.swift in Sources */,
+				A52A82491E875BFF0051C29C /* HudView.swift in Sources */,
 				A5A99D971E85D437006429B9 /* HFHomeView.swift in Sources */,
+				A52A824A1E875BFF0051C29C /* LoadingMessagesHandler.swift in Sources */,
 				A592EBDE1E85185000948DAB /* HFNetworkRequest.swift in Sources */,
 				A55AFDDB1E850BCE00CE8F12 /* AppDelegate.swift in Sources */,
 			);
