@@ -21,6 +21,7 @@
 		A52A824F1E8822600051C29C /* UIView+VisualUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A824E1E8822600051C29C /* UIView+VisualUtil.swift */; };
 		A52A82541E8827C10051C29C /* HFHomeTableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82531E8827C10051C29C /* HFHomeTableViewCellProtocol.swift */; };
 		A52A82561E887A8D0051C29C /* HFRateImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82551E887A8D0051C29C /* HFRateImage.swift */; };
+		A52A82581E8886E00051C29C /* HFDeviceOrientationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82571E8886E00051C29C /* HFDeviceOrientationUtil.swift */; };
 		A55AFDDB1E850BCE00CE8F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AFDDA1E850BCE00CE8F12 /* AppDelegate.swift */; };
 		A55AFDE51E850BCE00CE8F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55AFDE31E850BCE00CE8F12 /* LaunchScreen.storyboard */; };
 		A55AFDF01E850BCE00CE8F12 /* HelloFreshTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AFDEF1E850BCE00CE8F12 /* HelloFreshTestTests.swift */; };
@@ -72,6 +73,7 @@
 		A52A824E1E8822600051C29C /* UIView+VisualUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+VisualUtil.swift"; sourceTree = "<group>"; };
 		A52A82531E8827C10051C29C /* HFHomeTableViewCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeTableViewCellProtocol.swift; sourceTree = "<group>"; };
 		A52A82551E887A8D0051C29C /* HFRateImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFRateImage.swift; sourceTree = "<group>"; };
+		A52A82571E8886E00051C29C /* HFDeviceOrientationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFDeviceOrientationUtil.swift; sourceTree = "<group>"; };
 		A55AFDD71E850BCE00CE8F12 /* HelloFreshTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloFreshTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55AFDDA1E850BCE00CE8F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A55AFDE41E850BCE00CE8F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -361,6 +363,7 @@
 			children = (
 				A592EBE61E851FD400948DAB /* HFDataFileReader.swift */,
 				A52A82371E8713E00051C29C /* HFNSObjectUtil.swift */,
+				A52A82571E8886E00051C29C /* HFDeviceOrientationUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -637,6 +640,7 @@
 				A592EBE71E851FD400948DAB /* HFDataFileReader.swift in Sources */,
 				A5A99D941E85D35A006429B9 /* HFHomeViewController.swift in Sources */,
 				A52A82481E875BFF0051C29C /* HudUtilities.swift in Sources */,
+				A52A82581E8886E00051C29C /* HFDeviceOrientationUtil.swift in Sources */,
 				A52A823E1E874A950051C29C /* HFHomeTableViewCell.swift in Sources */,
 				A592EBE41E851ACA00948DAB /* NSData+HelperExtension.swift in Sources */,
 				A5A99D9D1E85DACD006429B9 /* HFHomeProvider.swift in Sources */,

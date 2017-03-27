@@ -15,7 +15,6 @@ class HFViewController: UIViewController {
 
     fileprivate var hudController: HFHUDLoading?
 
-    
 //    Use this to refer to UIView
     internal var mainView: HFHomeView {
         return self.view as! HFHomeView
@@ -48,7 +47,7 @@ extension HFViewController: UITableViewDelegate, UITableViewDataSource {
     
     //    MARK: TableView Delegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 340
+        return HFDeviceOrientationUtil.getRowSizeByDeviceOrientationPosition()
     }
     
     //    MARK: - TableView Data Source
