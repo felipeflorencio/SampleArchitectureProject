@@ -22,6 +22,11 @@
 		A52A82541E8827C10051C29C /* HFHomeTableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82531E8827C10051C29C /* HFHomeTableViewCellProtocol.swift */; };
 		A52A82561E887A8D0051C29C /* HFRateImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82551E887A8D0051C29C /* HFRateImage.swift */; };
 		A52A82581E8886E00051C29C /* HFDeviceOrientationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82571E8886E00051C29C /* HFDeviceOrientationUtil.swift */; };
+		A52A825C1E88AAD40051C29C /* HFLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A825B1E88AAD40051C29C /* HFLoginViewController.swift */; };
+		A52A825E1E88AE590051C29C /* HFLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A825D1E88AE590051C29C /* HFLoginView.swift */; };
+		A52A82611E88BBD20051C29C /* HFGenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82601E88BBD20051C29C /* HFGenericViewController.swift */; };
+		A52A82631E88C6D20051C29C /* HFLoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82621E88C6D20051C29C /* HFLoginViewProtocol.swift */; };
+		A52A82651E88EC5A0051C29C /* HFSystemUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82641E88EC5A0051C29C /* HFSystemUtilities.swift */; };
 		A55AFDDB1E850BCE00CE8F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AFDDA1E850BCE00CE8F12 /* AppDelegate.swift */; };
 		A55AFDE51E850BCE00CE8F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55AFDE31E850BCE00CE8F12 /* LaunchScreen.storyboard */; };
 		A55AFDF01E850BCE00CE8F12 /* HelloFreshTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AFDEF1E850BCE00CE8F12 /* HelloFreshTestTests.swift */; };
@@ -74,6 +79,11 @@
 		A52A82531E8827C10051C29C /* HFHomeTableViewCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeTableViewCellProtocol.swift; sourceTree = "<group>"; };
 		A52A82551E887A8D0051C29C /* HFRateImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFRateImage.swift; sourceTree = "<group>"; };
 		A52A82571E8886E00051C29C /* HFDeviceOrientationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFDeviceOrientationUtil.swift; sourceTree = "<group>"; };
+		A52A825B1E88AAD40051C29C /* HFLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFLoginViewController.swift; sourceTree = "<group>"; };
+		A52A825D1E88AE590051C29C /* HFLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFLoginView.swift; sourceTree = "<group>"; };
+		A52A82601E88BBD20051C29C /* HFGenericViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFGenericViewController.swift; sourceTree = "<group>"; };
+		A52A82621E88C6D20051C29C /* HFLoginViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFLoginViewProtocol.swift; sourceTree = "<group>"; };
+		A52A82641E88EC5A0051C29C /* HFSystemUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFSystemUtilities.swift; sourceTree = "<group>"; };
 		A55AFDD71E850BCE00CE8F12 /* HelloFreshTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloFreshTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55AFDDA1E850BCE00CE8F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A55AFDE41E850BCE00CE8F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -188,6 +198,31 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		A52A82591E88AABD0051C29C /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A52A825B1E88AAD40051C29C /* HFLoginViewController.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		A52A825A1E88AAC70051C29C /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				A52A825D1E88AE590051C29C /* HFLoginView.swift */,
+				A52A82621E88C6D20051C29C /* HFLoginViewProtocol.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		A52A825F1E88BBC50051C29C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A52A82601E88BBD20051C29C /* HFGenericViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		A55AFDCE1E850BCD00CE8F12 = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +280,7 @@
 		A592EBCC1E85173600948DAB /* Infraestructure */ = {
 			isa = PBXGroup;
 			children = (
+				A52A825F1E88BBC50051C29C /* ViewController */,
 				A52A824B1E875C500051C29C /* UIComponents */,
 				A592EBE51E851FA700948DAB /* Util */,
 				A592EBCD1E85173600948DAB /* ErrorHandle */,
@@ -345,6 +381,7 @@
 		A592EBD91E85173600948DAB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A52A825A1E88AAC70051C29C /* LoginView */,
 				A5A99D951E85D36D006429B9 /* HomeView */,
 			);
 			path = View;
@@ -353,6 +390,7 @@
 		A592EBDA1E85173600948DAB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A52A82591E88AABD0051C29C /* LoginViewController */,
 				A5A99D921E85D35A006429B9 /* HomeViewController */,
 			);
 			path = ViewController;
@@ -364,6 +402,7 @@
 				A592EBE61E851FD400948DAB /* HFDataFileReader.swift */,
 				A52A82371E8713E00051C29C /* HFNSObjectUtil.swift */,
 				A52A82571E8886E00051C29C /* HFDeviceOrientationUtil.swift */,
+				A52A82641E88EC5A0051C29C /* HFSystemUtilities.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -628,17 +667,22 @@
 				A52A82541E8827C10051C29C /* HFHomeTableViewCellProtocol.swift in Sources */,
 				A52A82461E875BFF0051C29C /* APESuperHUD.swift in Sources */,
 				A52A824D1E875C6E0051C29C /* HFHUDLoading.swift in Sources */,
+				A52A82611E88BBD20051C29C /* HFGenericViewController.swift in Sources */,
 				A52A823B1E8733780051C29C /* HFHomeBusinessProtocol.swift in Sources */,
 				A52A824F1E8822600051C29C /* UIView+VisualUtil.swift in Sources */,
 				A5A99DA71E85E343006429B9 /* HFHomeUserModel.swift in Sources */,
+				A52A82631E88C6D20051C29C /* HFLoginViewProtocol.swift in Sources */,
 				A5A99DA91E860CD5006429B9 /* HSParseDataError.swift in Sources */,
 				A52A82381E8713E00051C29C /* HFNSObjectUtil.swift in Sources */,
 				A5A99D9F1E85DAD9006429B9 /* HFHomeModel.swift in Sources */,
 				A52A82471E875BFF0051C29C /* HudAppearance.swift in Sources */,
+				A52A825C1E88AAD40051C29C /* HFLoginViewController.swift in Sources */,
 				A5A99D911E85CB99006429B9 /* HFNetworkRequestConfigProtocol.swift in Sources */,
 				A592EBE01E8518A000948DAB /* HFNetworkRequestError.swift in Sources */,
+				A52A82651E88EC5A0051C29C /* HFSystemUtilities.swift in Sources */,
 				A592EBE71E851FD400948DAB /* HFDataFileReader.swift in Sources */,
 				A5A99D941E85D35A006429B9 /* HFHomeViewController.swift in Sources */,
+				A52A825E1E88AE590051C29C /* HFLoginView.swift in Sources */,
 				A52A82481E875BFF0051C29C /* HudUtilities.swift in Sources */,
 				A52A82581E8886E00051C29C /* HFDeviceOrientationUtil.swift in Sources */,
 				A52A823E1E874A950051C29C /* HFHomeTableViewCell.swift in Sources */,

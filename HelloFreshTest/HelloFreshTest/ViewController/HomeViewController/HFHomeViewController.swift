@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HFViewController: UIViewController {
+class HFViewController: HFGenericViewController {
 
     fileprivate var listOfFoodRecipes = Array<HFHomeModel>()
     fileprivate let requestManager = HFHomeManager()
@@ -22,25 +22,35 @@ class HFViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hudController = HFHUDLoading(viewToShowLoading: self.mainView)
 
         self.mainView.tableView.delegate = self
         self.mainView.tableView.dataSource = self
         
-        requestManager.requestHomeData { (listOfData, errorMsg) in
-            self.hudController?.stopLoading()
-            
-            if errorMsg == nil {
-                guard let dataResponse = listOfData else { return }
-                self.listOfFoodRecipes = dataResponse
-                self.mainView.tableView.reloadData()
-            } else {
-                self.mainView.failedInMakeRequest(controller: self)
-            }
-            
-        }
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if weLogin() {
+            self.hudController = HFHUDLoading(viewToShowLoading: self.mainView)
+            self.hudController?.showLoading()
+            
+            requestManager.requestHomeData { (listOfData, errorMsg) in
+                self.hudController?.stopLoading()
+                
+                if errorMsg == nil {
+                    guard let dataResponse = listOfData else { return }
+                    self.listOfFoodRecipes = dataResponse
+                    self.mainView.tableView.reloadData()
+                } else {
+                    self.mainView.failedInMakeRequest(controller: self)
+                }
+                
+            }
+        }
+
+    }
+    
 }
 
 extension HFViewController: UITableViewDelegate, UITableViewDataSource {
