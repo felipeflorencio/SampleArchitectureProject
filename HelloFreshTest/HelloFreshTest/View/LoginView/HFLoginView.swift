@@ -18,9 +18,17 @@ class HFLoginView: UIView {
     
     weak var loginViewDelegate: HFLoginViewProtocol?
 
-    
     @IBAction func loginButton(_ sender: Any) {
         self.loginViewDelegate?.performLogin()
     }
-    
+ 
+    func showMissingTextFieldAlert() -> UIAlertController{
+        
+        let alert = UIAlertController(title: "Failed", message: "Verify if you filled all fields right", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default) { action in
+        })
+        
+        return alert
+    }
+
 }

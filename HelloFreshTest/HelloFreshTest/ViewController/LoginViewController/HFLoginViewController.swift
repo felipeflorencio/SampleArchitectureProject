@@ -97,8 +97,15 @@ class HFLoginViewController: HFGenericViewController {
 extension HFLoginViewController: HFLoginViewProtocol{
  
     func performLogin() {
-        setLoginStatus(status: true)
-        self.dismiss(animated: true, completion: nil)
+        
+        if self.isValidEmail(textStr: self.mainView.txtEmailTextField.text!) &&
+            self.isValidPassword(textStr: self.mainView.txtPasswordTextField.text!) {
+
+            setLoginStatus(status: true)
+            self.dismiss(animated: true, completion: nil)
+        } else {
+            self.present(self.mainView.showMissingTextFieldAlert(), animated: true, completion: nil)
+        }
     }
     
 }
