@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		43F67A96793EE6D54FCB59EC /* Pods_HelloFreshTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD29E7AA840A0901B63ACE9 /* Pods_HelloFreshTestTests.framework */; };
 		64B5B75ED5EF1FC31B646479 /* Pods_HelloFreshTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05036BBABF5A6C0570ED9F1B /* Pods_HelloFreshTest.framework */; };
+		A50126E71E8B06B2006A8BC2 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = A50126E41E8B06B2006A8BC2 /* recipes.json */; };
+		A50126E81E8B06B2006A8BC2 /* HFDataFileReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50126E61E8B06B2006A8BC2 /* HFDataFileReaderTests.swift */; };
+		A50126F01E8B625C006A8BC2 /* HFHomeBusinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50126EF1E8B625C006A8BC2 /* HFHomeBusinessTests.swift */; };
 		A52A82381E8713E00051C29C /* HFNSObjectUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82371E8713E00051C29C /* HFNSObjectUtil.swift */; };
 		A52A823B1E8733780051C29C /* HFHomeBusinessProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A823A1E8733770051C29C /* HFHomeBusinessProtocol.swift */; };
 		A52A823E1E874A950051C29C /* HFHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A823D1E874A950051C29C /* HFHomeTableViewCell.swift */; };
@@ -29,7 +32,6 @@
 		A52A82651E88EC5A0051C29C /* HFSystemUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A82641E88EC5A0051C29C /* HFSystemUtilities.swift */; };
 		A55AFDDB1E850BCE00CE8F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AFDDA1E850BCE00CE8F12 /* AppDelegate.swift */; };
 		A55AFDE51E850BCE00CE8F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55AFDE31E850BCE00CE8F12 /* LaunchScreen.storyboard */; };
-		A55AFDF01E850BCE00CE8F12 /* HelloFreshTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AFDEF1E850BCE00CE8F12 /* HelloFreshTestTests.swift */; };
 		A592EBDB1E85173600948DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A592EBD21E85173600948DAB /* Assets.xcassets */; };
 		A592EBDC1E85173600948DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A592EBD41E85173600948DAB /* Main.storyboard */; };
 		A592EBDE1E85185000948DAB /* HFNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A592EBDD1E85185000948DAB /* HFNetworkRequest.swift */; };
@@ -65,6 +67,9 @@
 		5DF6B1ED20A54CA49B527FE1 /* Pods-HelloFreshTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFreshTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloFreshTest/Pods-HelloFreshTest.debug.xcconfig"; sourceTree = "<group>"; };
 		995DF31AC43705D3AE525930 /* Pods-HelloFreshTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFreshTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloFreshTestTests/Pods-HelloFreshTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		9DD29E7AA840A0901B63ACE9 /* Pods_HelloFreshTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloFreshTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50126E41E8B06B2006A8BC2 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
+		A50126E61E8B06B2006A8BC2 /* HFDataFileReaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFDataFileReaderTests.swift; sourceTree = "<group>"; };
+		A50126EF1E8B625C006A8BC2 /* HFHomeBusinessTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeBusinessTests.swift; sourceTree = "<group>"; };
 		A52A82371E8713E00051C29C /* HFNSObjectUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFNSObjectUtil.swift; sourceTree = "<group>"; };
 		A52A823A1E8733770051C29C /* HFHomeBusinessProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeBusinessProtocol.swift; sourceTree = "<group>"; };
 		A52A823D1E874A950051C29C /* HFHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFHomeTableViewCell.swift; sourceTree = "<group>"; };
@@ -89,7 +94,6 @@
 		A55AFDE41E850BCE00CE8F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A55AFDE61E850BCE00CE8F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A55AFDEB1E850BCE00CE8F12 /* HelloFreshTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloFreshTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A55AFDEF1E850BCE00CE8F12 /* HelloFreshTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloFreshTestTests.swift; sourceTree = "<group>"; };
 		A55AFDF11E850BCE00CE8F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A592EBD21E85173600948DAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A592EBD41E85173600948DAB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -149,6 +153,47 @@
 				995DF31AC43705D3AE525930 /* Pods-HelloFreshTestTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A50126E01E8B0612006A8BC2 /* Infraestructure */ = {
+			isa = PBXGroup;
+			children = (
+				A50126E31E8B06B2006A8BC2 /* Resource */,
+				A50126E51E8B06B2006A8BC2 /* Util */,
+			);
+			path = Infraestructure;
+			sourceTree = "<group>";
+		};
+		A50126E31E8B06B2006A8BC2 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A50126E41E8B06B2006A8BC2 /* recipes.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A50126E51E8B06B2006A8BC2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A50126E61E8B06B2006A8BC2 /* HFDataFileReaderTests.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A50126E91E8B6238006A8BC2 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				A50126EA1E8B6238006A8BC2 /* HomeBusiness */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		A50126EA1E8B6238006A8BC2 /* HomeBusiness */ = {
+			isa = PBXGroup;
+			children = (
+				A50126EF1E8B625C006A8BC2 /* HFHomeBusinessTests.swift */,
+			);
+			path = HomeBusiness;
 			sourceTree = "<group>";
 		};
 		A52A82391E8733670051C29C /* Protocol */ = {
@@ -263,7 +308,8 @@
 		A55AFDEE1E850BCE00CE8F12 /* HelloFreshTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				A55AFDEF1E850BCE00CE8F12 /* HelloFreshTestTests.swift */,
+				A50126E91E8B6238006A8BC2 /* Business */,
+				A50126E01E8B0612006A8BC2 /* Infraestructure */,
 				A55AFDF11E850BCE00CE8F12 /* Info.plist */,
 			);
 			path = HelloFreshTestTests;
@@ -560,6 +606,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50126E71E8B06B2006A8BC2 /* recipes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -703,7 +750,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A55AFDF01E850BCE00CE8F12 /* HelloFreshTestTests.swift in Sources */,
+				A50126F01E8B625C006A8BC2 /* HFHomeBusinessTests.swift in Sources */,
+				A50126E81E8B06B2006A8BC2 /* HFDataFileReaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
